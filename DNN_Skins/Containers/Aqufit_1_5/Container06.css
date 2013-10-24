@@ -1,0 +1,164 @@
+/*========================================================*/
+/*             CSS for DotNetNuke Containers              */
+/*                  by Evan O'Neil                        */
+/*              http://www.NukeVille.com                  */
+/*========================================================*/
+
+/*========================================================*/
+/*     Container Design Elements                          */
+/*========================================================*/
+
+
+.c5-container
+{
+	margin-left: 10px;
+	padding-right: 20px;
+}
+.c5-title
+{
+	border-top: 1px solid #E4E4E4;
+	border-bottom: 1px solid #E4E4E4;
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+.c5-title
+{
+	font: 15px,  Verdana, Arial, Helvetica, sans-serif;  
+	color: #CB6300;	
+}
+
+ .ati_Form_Button
+ {
+ 	float: right;
+ 	width: 127px;
+ 	height: 29px;
+ 	text-align: center;
+ 	background: url(buttonLow.png) no-repeat top left;
+ 	border: 0;
+ 	background-color: Transparent; 	
+ }
+ 
+  .ati_Form_Button2
+ {
+ 	float: right;
+ 	width: 127px;
+ 	height: 29px;
+ 	text-align: center;
+ 	background: url(buttonHi.png) no-repeat top left;
+ 	border: 0;
+ 	background-color: Transparent; 	
+ }
+ 
+  .ati_Form_Button:HOVER
+ {
+ 	float: right;
+ 	width: 127px;
+ 	height: 29px;
+ 	text-align: center;
+ 	background: url(buttonHi.png) no-repeat top left;
+ 	border: 0;
+ 	background-color: Transparent;
+ 	color: White;
+ }
+
+.ati_Form_Text,
+.ati_Form_Text2,
+.ati_Form_TextLeft
+{
+	width: 250px;
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 11px; 
+	font-weight: normal; 
+	color: #292C2E; 
+	text-align: right;
+	padding-right: 8px;
+	padding-left: 8px;
+
+}
+.ati_Form_TextLeft
+{
+	padding-left: 0px;
+	text-align: left;
+}
+.ati_FormSpacer
+{
+	width: 50px;
+}
+.ati_Form_Div
+{
+	width: 100%;
+	background-color: #E1EFFA;
+	padding-bottom: 8px;
+}
+
+.ati_Form_TextBox
+{
+	border: 0px;
+	background: url(inputMedium.png) no-repeat top left;
+	width: 225px;
+	height: 29px;
+	font-size: 18px;
+	padding-top: 4px;
+	padding-left: 7px;
+	padding-right: 7px;
+	color: #666666;
+	margin-bottom: 10px;
+}
+
+.ati_Form_TextArea
+{
+	border: 0px;
+	background: url(textAreaMedium.png) no-repeat top left;
+	width: 225px;
+	height: 70px;
+	font-size: 18px;
+	padding-top: 4px;
+	padding-left: 7px;
+	padding-right: 7px;
+	color: #666666;
+	margin-bottom: 10px;
+}
+
+.ati_Form_TextBoxSmall
+{
+	border: 0px;
+	background: url(inputSmall.png) no-repeat top left;
+	width: 121px;
+	height: 29px;
+	font-size: 18px;
+	padding-top: 4px;
+	padding-left: 7px;
+	padding-right: 7px;
+	color: #666666;
+	margin-bottom: 10px;
+}
+    
+.ati_Form_Description
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 11px; 
+	padding-top: 8px;
+	padding-bottom: 8px;
+}       
+.ati_Form_Help
+{
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-left: 8px;
+} 
+.ati_Form_Submit
+{
+	padding-left: 8px;
+}  
+/*========================================================*/
+
+
+
+
+
+
+
+
+
+
+

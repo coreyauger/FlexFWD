@@ -1,0 +1,224 @@
+#ati_background
+{
+	background: #CDCDCD url(standardBG.jpg) no-repeat top left;	
+	background-attachment: fixed;
+	width: 100%;
+	height: 100%;
+}
+
+
+#ati_topBanner
+{	
+	height: 65px;
+	width: 100%;
+}
+#ati_topBannerLeft
+{
+	width: 17px;
+	font-size: 1px;
+	background: url(topBannerLeft.png) no-repeat top left;
+}
+.ati_topBannerSpan
+{
+	font-size: 1px;
+	background: url(topBannerSpan.png) repeat-x top left;
+}
+#ati_topBannerRight
+{
+	width: 17px;
+	font-size: 1px;
+	background: url(topBannerRight.png) no-repeat top left;
+}
+.ati_hSpacer
+{
+	font-size: 1px;
+	height: 10px;
+}
+#ati_sitePanel
+{
+	position: relative;
+	z-index: 100;
+}
+#ati_main
+{
+	width: 100%;
+}
+#ati_standard_TopSpace
+{
+	height: 28px;
+	text-align: right;
+	padding-right: 17px;
+	padding-bottom: 2px;
+}
+#ati_mainTopLeft
+{
+	width: 16px;
+	font-size: 1px;
+	height: 12px;
+	background: url(mainTopLeft.png) no-repeat top left;
+}
+#ati_mainTopSpan
+{
+	font-size: 1px;
+	height: 12px;
+	background: url(mainTopSpan.png) repeat-x top left;
+}
+#ati_mainTopRight
+{
+	font-size: 1px;
+	width: 16px;
+	height: 12px;
+	background: url(mainTopRight.png) no-repeat top left;
+}
+#ati_mainLeft
+{
+	font-size: 1px;
+	width: 16px;	
+	background: url(mainLeftSpan.png) repeat-y top left;
+}
+#ati_mainRight
+{
+	font-size: 1px;
+	width: 16px;
+	background: url(mainRightSpan.png) repeat-y top left;
+}
+#ati_mainCenter
+{
+	background-color: white;
+	padding-top: -10px;
+}
+
+#ati_mainBottomLeft
+{
+	width: 16px;
+	height: 16px;
+	font-size: 1px;
+	height: 1px;
+	background: url(mainBottomLeft.png) no-repeat top left;
+}
+#ati_mainBottomSpan
+{
+	font-size: 1px;
+	height: 16px;
+	background: url(mainBottomSpan.png) repeat-x top left;
+}
+#ati_mainBottomRight
+{
+	font-size: 1px;
+	width: 16px;
+	height: 16px;
+	background: url(mainBottomRight.png) no-repeat top left;
+}
+.ati_bottomInfo
+{
+	padding-right: 17px;
+	padding-left: 17px;
+}
+
+.ati_standardSpan
+{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    font-weight: normal;
+	text-align: justify;
+   
+}
+.ati_standard_lightTxt
+{
+	color: #989898;
+}
+.ati_standard_LoginRegister {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    font-weight: normal;
+	text-align: justify;
+    color: #898989;
+}
+.atiArrowHi
+{
+	padding-left: 30px;
+	height: 24px;
+	background: url(arrowHi.png) no-repeat top left;
+}
+.atiArrowLow
+{
+	padding-left: 30px;
+	height: 24px;	
+	background: url(arrowLow.png) no-repeat top left;
+}
+.atiStepHi
+{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    padding-left: 10px;
+    border-right: dashed 1px #AAAAAA;
+    color: Black;
+    width: 20%;
+}
+.atiStepTrackHi
+{
+	font-size: 1px;
+	background: url(stepTrackHi.png) repeat-x top left;
+	height: 11px;    
+}
+.atiStepTrackLow
+{
+	font-size: 1px;
+	background: url(stepTrackLow.png) repeat-x top left;
+	height: 11px;    
+}
+.atiStepLow
+{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    padding-left: 10px;
+    border-right: dashed 1px #AAAAAA;
+    color: #CCCCCC;
+    width: 20%;
+}
+
+
+/*******************************/
+/*  Panes Style                */
+/*******************************/
+.panes-outer { width: 100%; padding-left: 0px; padding-right: 0px; padding-top: 15px; padding-bottom: 15px; }
+.Content-Pane { width: 100%; padding-left: 0px; padding-right: 0px;	padding-top: 0px; }
+.Top-Left-Pane { padding-right: 6px; }
+.Top-Right-Pane { width: 70%; padding-left: 6px; }
+.Left-Pane { width: 200px; }
+.Middle-Pane { padding-left: 12px; padding-right: 12px; }
+.Right-Pane { padding-left: 0px; padding-right: 0px; padding-top: 0px; width: 200px; background-color: #ededed; border: 1px solid #d9d9d9; margin: 12px; padding-top: 12px; } 
+.Center-Pane {padding-left: 0px; padding-right: 0px; padding-top: 0px; }
+.Main-Left-Pane { padding-left: 0px; padding-right: 6px;	padding-top: 0px; }
+.Main-Middle-Pane { padding-left: 6px; padding-right: 6px; padding-top: 0px; }
+.Main-Right-Pane { padding-left: 6px; padding-right: 0px; padding-top: 0px; } 
+.Bottom-Pane { width: 100%; padding-left: 0px; padding-right: 0px; padding-top: 0px; }
+.Bottom-Left-Pane { width: 50%;	padding-right: 6px; }
+.Bottom-Right-Pane { width: 50%; padding-left: 6px; }
+
+
+/*========================================================*/
+/*     Main Menu and Module Menus                         */
+/*========================================================*/
+									 .TopImage-Pane{ }
+/*-- box that holds the menu    --*/ .MainMenu_MenuContainer { background: transparent; }
+/*-- bar that holds the menu    --*/ .MainMenu_MenuBar { cursor: pointer; cursor: hand; background: transparent; }
+/*-- submenu container          --*/ .MainMenu_SubMenu, .ModuleTitle_SubMenu { margin: 1px 0 0 0; }
+/*-- menuitems idle             --*/ .MainMenu_Idle TD { color: #EEE; background: url(nav2-bg.gif) repeat-x top center transparent; font-size: 8pt; padding: 10px 0px 9px 0px; font-weight: bold; }
+/*-- menuitems over             --*/ .MainMenu_Selected TD { color: #FFF; background: url(nav2-active.gif) repeat-x top center transparent; font-size: 8pt; padding: 10px 0px 9px 0px; font-weight: bold; }
+/*-- menuitems active           --*/ .MainMenu_Active TD, .MainMenu_BreadcrumbActive TD { color: #FFF; background: url(nav2-active.gif) repeat-x top center transparent; font-size: 8pt; padding: 10px 0px 9px 0px; font-weight: bold; }
+/*-- middle seperator           --*/ .MainMenu_Seperator { background: url(nav2-div.gif) no-repeat top center transparent; width:1px; height: 32px; font-size:1px; }
+/*-- not needed - main menu     --*/ .MainMenu_MenuArrow, .MainMenu_RootMenuArrow, .MainMenu_MenuIcon  { display: none; }
+/*-- module menu continer       --*/ .ModuleTitle_MenuContainer { color: #2c2c2c; }
+/*-- module menu bar            --*/ .ModuleTitle_MenuBar { cursor: pointer; cursor: hand;}
+/*-- module menu padding        --*/ .ModuleTitle_MenuItem, .ModuleTitle_MenuItemSel { padding: 0 15px 0 10px; }
+/*-- not needed - module menu   --*/ .MainMenuSeperator, .ModuleTitle_MenuArrow, .ModuleTitle_RootMenuArrow { display: none; }
+									 .ModuleTitle_MenuIcon { background: #FFF; border: 0px; border-bottom: 1px dotted #999; width:0px; height: 20px; padding: 0 0 0 0; margin: 0 0 0 0; font-size: 0px; }
+									 .ModuleTitle_MenuIcon IMG { margin: 0 10px 0 10px; }
+/*-- removing seperator borders --*/ .MainMenu_MenuBreak { border-top-style: none; border-right-style: none;	border-left-style: none; border-bottom-style: none; background:transparent;  vertical-align:top;}
+
+/*==========================================================*/
+/*  End Style Sheet                                         */
+/*==========================================================*/
+
+

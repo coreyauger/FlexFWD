@@ -1,0 +1,83 @@
+/*========================================================*/
+/*             CSS for DotNetNuke Containers              */
+/*                  by Evan O'Neil                        */
+/*              http://www.NukeVille.com                  */
+/*========================================================*/
+
+/*========================================================*/
+/*     Container Design Elements                          */
+/*========================================================*/
+
+
+.c5-container
+{
+	margin-left: 10px;
+	padding-right: 20px;
+}
+.c5-title
+{
+	border-top: 1px solid #E4E4E4;
+	border-bottom: 1px solid #E4E4E4;
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+.c5-title
+{
+	font: 15px,  Verdana, Arial, Helvetica, sans-serif;  
+	color: #CB6300;	
+}
+
+textarea,
+.ati_Form_Text,
+.ati_Form_Text2 
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 11px; 
+	font-weight: normal; 
+	color: #292C2E; 
+	text-align: right;
+	padding-right: 8px;
+	padding-left: 8px;
+
+}
+.ati_Form_Div
+{
+	width: 100%;
+	background-color: #E1EFFA;
+	padding-bottom: 8px;
+}
+
+.ati_Form_TextBox
+{
+	width: 175px;
+}
+    
+.ati_Form_Description
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 11px; 
+	padding-top: 8px;
+	padding-bottom: 8px;
+}       
+.ati_Form_Help
+{
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-left: 8px;
+} 
+.ati_Form_Submit
+{
+	padding-left: 8px;
+}  
+/*========================================================*/
+
+
+
+
+
+
+
+
+
+
+

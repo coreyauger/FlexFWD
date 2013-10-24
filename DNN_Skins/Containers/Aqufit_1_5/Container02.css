@@ -1,0 +1,231 @@
+/* NEW STUFF */
+.c2-titleLeft
+{
+	background: url(c2_titleLeft.png) no-repeat top left;
+	width: 8px;
+	height: 59px;
+	font-size: 1px;
+}
+.c2-titleRight
+{
+	background: url(c2_titleRight.png) no-repeat top left;
+	width: 8px;
+	height: 59px;
+	font-size: 1px;
+}
+.c2-titleBar
+{
+	background: url(c2_titleCenter.png) repeat-x top left;
+	height: 59px;	
+}
+.c2-titleText
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 14px; 
+	font-weight: bold; 
+	color: #d75404;
+	padding-left: 5px;
+}
+.c2-right
+{
+	background: url(c2_right.png) repeat-y top right;
+	font-size: 1px;
+}
+.c2-left
+{
+	background: url(c2_left.png) repeat-y top left;
+	font-size: 1px;
+}
+.c2-bottomLeft
+{
+	background: url(c2_bottomLeft.png) no-repeat top left;
+	width: 8px;
+	height: 11px;
+	font-size: 1px;
+}
+.c2-bottomRight
+{
+	background: url(c2_bottomRight.png) no-repeat top left;
+	width: 8px;
+	height: 11px;
+	font-size: 1px;
+}
+.c2-bottom
+{
+	background: url(c2_bottom.png) repeat-x top left;
+	height: 11px;	
+}
+.c2-main  
+{
+	padding-top: 4px;
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 11px; 
+	font-weight: normal; 	
+}
+/*
+UL
+{
+	list-style: disc url(bullet.gif) inside;
+}
+*/
+ul li {
+  list-style: none;
+}
+
+
+
+/* FORM CONTROLS */
+ .ati_Form_ButtonGrey
+ {
+ 	width: 121px;
+ 	height: 29px;
+ 	text-align: center;
+ 	background: url(buttonGreyLow.png) no-repeat top left;
+ 	border: 0;
+ 	background-color: Transparent; 	
+ }
+ 
+  .ati_Form_ButtonGrey2
+ {
+ 	width: 121px;
+ 	height: 29px;
+ 	text-align: center;
+ 	background: url(buttonGreyHi.png) no-repeat top left;
+ 	border: 0;
+ 	background-color: Transparent; 	
+ }
+ 
+  .ati_Form_ButtonGrey:HOVER
+ {
+ 	width: 121px;
+ 	height: 29px;
+ 	text-align: center;
+ 	background: url(buttonGreyHi.png) no-repeat top left;
+ 	border: 0;
+ 	background-color: Transparent; 	
+ }
+
+
+ .ati_Form_Button
+ {
+ 	float: right;
+ 	width: 127px;
+ 	height: 29px;
+ 	text-align: center;
+ 	background: url(buttonLow.png) no-repeat top left;
+ 	border: 0;
+ 	background-color: Transparent;
+ }
+ 
+  .ati_Form_Button2
+ {
+ 	float: right;
+ 	width: 127px;
+ 	height: 29px;
+ 	text-align: center;
+ 	background: url(buttonHi.png) no-repeat top left;
+ 	border: 0;
+ 	background-color: Transparent; 	
+ }
+ 
+  .ati_Form_Button:HOVER
+ {
+ 	float: right;
+ 	width: 127px;
+ 	height: 29px;
+ 	text-align: center;
+ 	background: url(buttonHi.png) no-repeat top left;
+ 	border: 0;
+ 	background-color: Transparent;
+ 	color: White;
+ }
+
+.ati_Form_Text,
+.ati_Form_Text2,
+.ati_Form_TextLeft
+{
+	width: 150px;
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 11px; 
+	font-weight: normal; 
+	color: #292C2E; 
+	text-align: right;
+	padding-right: 8px;
+	padding-left: 8px;
+
+}
+.ati_Form_TextLeft
+{
+	padding-left: 0px;
+	text-align: left;
+}
+.ati_FormSpacer
+{
+	width: 50px;
+}
+.ati_Form_Div
+{
+	width: 100%;
+	background-color: #E1EFFA;
+	padding-bottom: 8px;
+}
+
+.ati_Form_TextBox
+{
+	border: 0px;
+	background: url(inputMedium.png) no-repeat top left;
+	width: 225px;
+	height: 29px;
+	font-size: 18px;
+	padding-top: 4px;
+	padding-left: 7px;
+	padding-right: 7px;
+	color: #666666;
+	margin-bottom: 15px;
+}
+
+.ati_Form_TextArea
+{
+	border: 0px;
+	background: url(textAreaMedium.png) no-repeat top left;
+	width: 225px;
+	height: 70px;
+	font-size: 18px;
+	padding-top: 4px;
+	padding-left: 7px;
+	padding-right: 7px;
+	color: #666666;
+	margin-bottom: 10px;
+}
+
+.ati_Form_TextBoxSmall
+{
+	border: 0px;
+	background: url(inputSmall.png) no-repeat top left;
+	width: 121px;
+	height: 29px;
+	font-size: 18px;
+	padding-top: 4px;
+	padding-left: 7px;
+	padding-right: 7px;
+	color: #666666;
+	margin-bottom: 10px;
+}
+    
+.ati_Form_Description
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 11px; 
+	padding-top: 8px;
+	padding-bottom: 8px;
+}       
+.ati_Form_Help
+{
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-left: 8px;
+} 
+.ati_Form_Submit
+{
+	padding-left: 8px;
+}  

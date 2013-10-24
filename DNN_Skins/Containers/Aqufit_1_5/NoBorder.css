@@ -1,0 +1,31 @@
+/*========================================================*/
+/*             CSS for DotNetNuke Containers              */
+/*                  by Evan O'Neil                        */
+/*              http://www.NukeVille.com                  */
+/*========================================================*/
+
+/*========================================================*/
+/*     Container Design Elements                          */
+/*========================================================*/
+
+
+/*-- conatiner title token             --*/ .BCC_MINIPS_NoBorder01Title { font-size: 11px; font-family: tahoma; color: #555; font-weight: bold; }
+/*-- container title cell              --*/ .BCC_MINIPS_NoBorder01TitleTD { width:100%; padding: 0;}
+/*-- container actions cell            --*/ .BCC_MINIPS_NoBorder01ActionsTD { width:0%; padding: 0;}
+/*-- container content pane            --*/ .BCC_MINIPS_NoBorder01Content { font-size: 11px; font-family: tahoma; color: #444; padding: 2px 4px 15px 4px;}
+/*-- container Icons cell              --*/ .BCC_MINIPS_NoBorder01Icons { text-align:right; padding: 5px 0 7px 0; border-top: 1px solid #BBBBBB;}
+
+/*-- top center section                --*/ .BCC_MINIPS_NoBorder01T { vertical-align:top; height: 17px; padding: 1px 3px 0 3px; }
+
+/*========================================================*/
+
+
+
+
+
+
+
+
+
+
+

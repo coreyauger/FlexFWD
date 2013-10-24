@@ -1,0 +1,61 @@
+body
+{
+	background-image: none;
+	background-color: White;
+}
+/*******************************/
+/* CA - Form stling
+/*******************************/
+.atiFormPanel ol li
+{
+	list-style-type: none;
+}
+.atiFormPanel fieldset {
+  font: 11px sans-serif;
+  border: 0;
+}
+
+.atiFormPanel label {
+  float: left;  
+  margin-right: 5px;
+  padding-top: 8px;
+  text-align: right;
+  font-weight: bold;
+}
+.atiFormPanel .instruction
+{
+	padding-left: 205px;	
+	display: block;	
+}
+#atiCaptchaRow
+{
+	position: relative;
+	top: -25px;
+    margin-left: 205px;	
+}
+#atiCaptchaRow .txtBlock
+{
+	position: relative;
+	top: -20px;
+	padding-left: 0px;
+	margin-left: 0px;
+	display: block;
+	
+}
+#atiCaptchaRow .ati_Form_TextBox
+{
+	display: block;
+}
+
+/*******************************/
+/*  Panes Style                */
+/*******************************/
+.Content-Pane {  }
+.Left-Pane {  }
+.Right-Pane {  } 
+
+/*==========================================================*/
+/*  End Style Sheet                                         */
+/*==========================================================*/
+
+
