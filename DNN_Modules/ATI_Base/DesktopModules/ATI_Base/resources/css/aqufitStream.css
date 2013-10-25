@@ -1,0 +1,254 @@
+﻿
+/*******************************************************/
+/* Stream Style */
+/*******************************************************/
+	
+.atiStreamList li
+    {
+    	list-style: none;
+    	list-style: none outside none;
+    	clear: both;   
+    } 
+   
+    .atiStreamList > li:hover
+    {
+    	background-color: #f3f3f3;
+    } 
+        
+    ul.atiStreamList li.atiStreamItem
+    {
+    	position: relative;
+    } 
+    
+    ul.streamTools,
+    ol.streamTools
+    {
+    	padding-top: 10px;
+	}  
+    
+    ul.streamTools li,
+    ol.streamTools li
+    {
+    	list-style: none;
+    	list-style: none outside none;
+    }  
+    
+    a.atiWorkoutLink
+    {
+    	font-size: 14px;
+    	font-weight: bold;
+    	color: #0095cd;
+    	text-decoration: none;
+    	
+    }
+    a.atiWorkoutLink:hover
+    {
+    	text-decoration: underline;
+    }
+        
+        
+    div.atiStreamItemLeft
+    {
+    	position: absolute;
+    	width: 50px;    	
+    	padding: 16px;
+    }
+   
+    div.atiStreamItemLeft img
+    {
+    	border: 0;
+    }
+    div.atiStreamItemLeft img.dropShadow
+    {
+    	padding: 3px 10px 10px 3px;
+    	background: #FFFFFF url(../images/profileBorder.png) no-repeat top left;	 	
+    }
+  
+    .hidden
+    {
+    	visibility: hidden;
+    }  
+    
+
+    div.atiStreamItemRight
+    {
+    	position: relative;
+    	margin-left: 90px;
+    	min-height: 100px;
+    	width: 100%;
+    	/*
+    	
+    	height: 100%;
+    	
+    	padding: 8px 0px 8px 0px;*/
+    }   
+    
+   div.atiStreamItemRight a.username
+    {
+    	color:#f9a01b;          
+    }
+    
+    div.atiStreamItemRight ol.hList li{
+        border: 0;       
+        display: inline;       
+        background-color: transparent;
+    }
+    
+    div.atiStreamItemRight a
+    {    	
+        padding-right: 8px;
+    }
+    div.atiStreamItemRight a span
+    {    	
+        padding-left: 2px;
+        line-height: 22px;
+    }
+    
+    div.atiStreamItemRight a.time
+    {
+    	color:#A1A1A1;
+        font-size:10px;
+        white-space:nowrap;
+        text-decoration: none; 
+      
+              
+    }
+    div.atiStreamItemRight a.time:hover
+    {
+    	text-decoration: underline;
+   
+    }
+    
+    div.atiStreamItemRight span.dist
+    {
+        color:#999;
+        font-size:16px;      
+        font-weight: normal;
+        position: absolute;  
+        top: 10px;
+        right: 18px;             
+        border: 1px solid #ccc;
+        padding: 5px;
+    }   
+    div.atiStreamItemRight a.title
+    {
+     	color:#666666;
+     	display: block;
+     	font-size: 13px;
+     	font-weight: bold; 
+    }   
+     
+    div.atiStreamItemRight span.pace 
+    {
+        color:#A1A1A1;
+        font-size:9px;
+        margin-left:10px;
+        white-space:nowrap;
+    }
+    div.atiStreamItemRight p
+    {
+    	color:#666666;
+    	font-size:12px;
+    	z-index: 100;
+    }
+    a.deleteStream
+    {
+    	float: right;
+    	color:#666666;
+    	font-size:11px;
+    }
+    li.visualizeStream
+    {
+    	position: absolute;
+    	top: 8;
+    	right: 50;
+    }
+    li.shareStream
+    {    	    	    
+		float: right;
+		padding-bottom: 5px;
+		padding-right: 11px;
+    }   
+    li.shareStream img
+    {
+    	vertical-align: middle;
+    }
+    li.shareStream span.toolDiv
+    {
+    	color: #DDD;
+    	font-size: 13px;
+    	padding: 0px 8px 0px 0px;
+    }
+    li.deleteComment
+    {
+    	position: absolute;
+    	top: -10;
+    	right: 0;
+    }  
+    ul.atiCommentBox
+    {
+    	position: relative;
+    }
+   ul.atiCommentBox li 
+   {
+   	    list-style: none;
+   	    list-style: none outside none;
+   }             
+   ul.atiCommentBox > li {
+        border-top: 1px solid #EEE;  
+        width: 430px;          	    
+    	padding: 7px;
+    	padding-bottom: 12px;
+    	margin-top: 12px;
+    	clear: both;
+    	list-style:none;
+		list-style: none outside none;
+    }
+    ul.atiCommentBox li a
+	{	
+		list-style:none;
+		list-style: none outside none;
+	}
+    
+    div.commentBoxLeft
+    {
+    	position: absolute;    	
+    	width: 50px;
+    	min-height: 50px;
+    	background-color: transparent;
+    }
+    div.commentBoxLeft img
+    {
+    	border: 1px solid white;
+    }
+    div.commentBoxRight
+    {    	    
+    	margin-left: 62px;	 
+    	width: 380px; 	
+
+    }
+    div.commentBoxRight span
+    {    	
+    }        
+    div.commentBoxRight img.speak
+    {
+    	position: absolute;
+    	top: 10;
+    	left: 63px;
+    }    
+    div.commentBoxRight textarea
+    {   
+    	width: 356px;
+    	height: 25px;   	
+    	padding: 3px 7px 3px 7px;    	
+    	border: 1px solid #cccccc;
+    	font-size:12px;
+    }    
+    div.commentBoxRight textarea.txtCommentFocus
+    {   
+    	height: 50px;  	
+    }
+    
+    /*****************************************************************************/
+
+

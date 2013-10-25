@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<!--
+	<modules>
+		<module />
+		<module />
+	</modules>
+	-->
+	<tools>
+		<tool name="Bold" shortcut="Ctrl+B" />
+		<tool name="Italic" shortcut="Ctrl+I" />
+		<tool name="Underline" shortcut="Ctrl+U" />
+		<tool name="Copy" shortcut="Ctrl+C" />
+		<tool name="Cut" shortcut="Ctrl+X" />
+		<tool name="Paste" shortcut="Ctrl+V" />
+		<tool name="InsertCustomLink" shortcut="Ctrl+L" />		
+		
+	</tools>
+	<!--
+	<tools>
+		<tool />
+		...
+	</tools>
+	...
+	<links>
+		<link />
+		<link />
+	</links>
+	<colors>
+		<color />
+		<color />
+	</colors>
+	-->
+</root>

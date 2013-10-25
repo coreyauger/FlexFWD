@@ -1,0 +1,435 @@
+﻿
+/*******************************************************/
+/* Stream Style */
+/*******************************************************/
+
+#atiStreamList > li
+    {
+    	border-top: 1px solid #000000;
+    	list-style: none;
+    	list-style: none outside none;
+    	clear: both;
+    	width: 100%;
+    }  
+     
+    div.atiStreamItemLeft
+    {
+    	position: relative;
+    	float: left;
+    	width: 170px;
+    	height: 100%;
+    	padding: 9px;
+    }
+    div.atiStreamItemLeft img
+    {
+    	padding: 3px 10px 10px 3px;
+    	background: #FFFFFF url(profileBorder.png) no-repeat top left;	 	
+    }
+  
+    .hidden
+    {
+    	visibility: hidden;
+    }  
+    
+	
+    div.atiStreamItemRight
+    {
+    	position: relative;
+    	float: right;
+    	width: 435px;
+    	height: 100%;
+    	padding-top: 8px;
+    	padding-bottom: 8px;    
+    }   
+    
+    div.atiStreamItemRight a.username,
+    #atiStreamList > li a
+    {
+    	color:#f48401;
+    }
+    
+    
+   div.atiStreamItemRight a.username
+    {
+    	font-size:14px;
+        line-height:22px; 
+        font-weight: normal;   
+        font-weight: bolder;        
+    }
+    
+    div.atiStreamItemRight ol.hList li{
+        border: 0;       
+        list-style:none;        
+        display: inline;       
+        position: relative;
+        bottom: 0px;
+        background-color: transparent;
+    }
+   
+    div.atiStreamItemRight a span
+    {    	
+        padding-left: 2px;
+        line-height: 22px;
+    }
+    
+    div.atiStreamItemRight a.time
+    {
+    	color:#A1A1A1;
+        font-size:10px;
+        white-space:nowrap;
+        text-decoration: none;     
+        line-height:22px;        
+    }
+    div.atiStreamItemRight a.time:hover
+    {
+    	text-decoration: underline;
+    }
+    
+   	span.stars
+    {
+    	padding-left: 9px;
+    	font-size:14px;
+    	color: #999999;
+    	font-weight: bold;
+    }
+    
+    div.atiStreamItemRight a.title,
+    div.atiStreamItemRight span.dist
+    {
+        color:#333333;
+        font-size:14px;      
+        font-weight: bold;     
+    }   
+    div.atiStreamItemRight a.title
+    {
+     	color:#666666;
+    }   
+     
+    div.atiStreamItemRight span.pace 
+    {
+        color:#A1A1A1;
+        font-size:9px;
+        margin-left:10px;
+        white-space:nowrap;
+    }
+    div.atiStreamItemRight p
+    {
+    	color:#666666;
+    	font-size:12px;
+    	display: block;
+    	width: 420px;    	
+    }   
+    li.shareStream
+    {
+    	float: right;
+    	right: 8;    	
+    }
+    
+    li.shareStream span.atiOptions
+    {
+    	background-color: Green;
+    }
+    li.shareStream span.atiOptions ul
+    {
+    	position: absolute;
+    	display: none;
+    	z-index: 999;
+    	padding-top: 20px;
+    	margin-top: -20px;
+    	border-bottom: 1px solid black;
+    }
+    li.shareStream span.atiOptions ul li
+	{
+		 display: list-item;   	
+		 width: 100px;	 
+	}
+	li.shareStream span.atiOptions ul li a
+	{		
+		background-color: White;		
+		display: block;
+		padding: 3px 9px 3px 9px;
+	}
+	li.shareStream span.atiOptions ul li a:hover
+	{
+		background-color: #CCCCCC;		
+	}
+	
+       
+    li.deleteComment
+    {
+    	position: absolute;
+    	top: 0;
+    	right: -8;
+    }  
+   ul.atiCommentBox li 
+   {
+   	    list-style: none;
+   	    list-style: none outside none;
+   }             
+   ul.atiCommentBox > li {
+        border-top: 1px solid white;        
+    	background-color: #f4f4f4;    
+    	padding: 7px;
+    	clear: both;
+    	margin-right: 9px;
+    }
+    
+    ul.atiUserStats
+    {
+    	color: #666666;
+    	font-weight: bold;
+    	clear: both;  
+    	/*position: relative;
+    	top: -20px;  */
+		position: absolute;
+    }
+	ul.atiUserStats li
+	{
+		list-style: none;
+		list-style: none outside none;
+		width: 100px;		
+		font-size: 11px;
+		margin: 0;
+		padding: 0;
+	}
+	span.atiUserStats,
+	ul.atiUserStats li em
+	{
+		font-size: 12px;		
+		margin: 0;
+		padding: 0;
+	}
+	span.atiUserStats em,
+	ul.atiUserStats li em
+	{
+	font-weight: bold;
+	}
+    
+    div.atiUserBCard
+    {
+    	background-color: #eeeeee;
+    	padding: 9px;
+    	margin-right: 9px;
+    	height: 50px;	
+		clear: both;		
+    }
+    
+    div.commentBoxLeft
+    {
+    	position: absolute;    	
+    	width: 50px;
+    	height: 100%;
+    	background-color: transparent;
+    }
+    div.commentBoxLeft img
+    {
+    	border: 1px solid white;
+    }
+    div.commentBoxRight
+    {
+    	position: relative;
+    	left: 62;    	 
+    	height: 100%;    
+    	width: 380px;	
+    	min-height: 50px;
+    }
+    div.commentBoxRight span
+    {    	
+    }        
+    div.commentBoxRight img.speak
+    {
+    	position: absolute;
+    	top: 0;
+    	left: -6px;
+    }    
+    div.commentBoxRight textarea
+    {   
+    	width: 380px;
+    	height: 25px;   	
+    	padding: 3px 7px 3px 7px;    	
+    	border: 1px solid #cccccc;
+    	font-size:12px;
+    }    
+    div.commentBoxRight textarea.txtCommentFocus
+    {   
+    	height: 50px;  	
+    }
+            
+    
+     div.messageListHead > div
+    {
+    	padding: 3px;
+    	clear: both;
+    	font-size: 12px;
+    	color: #E78F08;
+    	font-weight: bold;    
+    	background-color: #dedede; 
+    	height: 30px;	
+    	
+    }
+    div.messageListHead > span
+    {
+    	padding: 4px;
+    	background-color: White;
+    	display: block;
+    }
+    div.messageListHead > span a
+    {
+        color: #E78F08;
+    }
+    
+    div.messageListHead > div > input
+    {
+    	font-size: 12px;
+    }
+    
+    
+      ul.prepTimes
+    {
+    	padding-top: 9px;
+    	padding-bottom: 9px;
+    }
+    
+    ul.prepTimes li
+    {
+    	list-style: none;
+    	list-style: none outside none;
+	    display: inline;	    
+	    font-size: 14px;
+	    color: #666666;
+	    padding-right: 18px;
+    }
+    
+#atiRecipeView ul.ingredients
+{
+	font-size: 11px;
+	position: relative;
+	right: 0px;	
+	list-style: none;
+	list-style: none outside none;
+	margin-bottom: 18px;	
+	width: 425px;
+	float: right;
+}
+#atiRecipeView ul.hList
+{
+	display: inline;
+}
+#atiRecipeView ul.hList li
+{
+	list-style: none;
+	list-style: none outside none;
+	display: inline;
+}
+li#atiRecipeStrict,
+li#atiRecipeRating
+{
+	font-size: 14px;
+	color: #324154;
+	padding-left: 9px;
+	font-weight: bold;
+}
+
+#atiPreview
+{
+	position: absolute;
+	z-index: 99999;
+	padding: 9px;
+	background-color: White;
+}
+
+#atiRecipeView h2
+{
+	color: #324154;
+}
+#atiRecipeView ul.ingredients li
+{
+	padding: 9px;
+	border-bottom: 1px solid #CCCCCC;
+	list-style: none;
+	list-style: none outside none;
+}
+#atiRecipeView span.directions
+{
+	padding-right: 18px;
+	margin-bottom: 18px;
+	display: block;
+}
+
+
+a.time
+    {
+    	color:#A1A1A1;
+        font-size:10px;
+        white-space:nowrap;
+        text-decoration: none;     
+        line-height:22px;        
+    }
+
+div.commentBoxLeft ul li.deleteComment
+    {
+    	float: right;
+    }  
+   ul.atiCommentBox li 
+   {
+   	    list-style: none;
+   	    list-style: none outside none;
+   }             
+   ul.atiCommentBox > li {
+        border-top: 1px solid white;        
+    	background-color: #f4f4f4;    
+    	padding: 18px;
+    	clear: both;
+    	border-bottom: 1px dashed #CCCCCC;
+    }
+    
+    div.commentBoxLeft
+    {
+    	float: left;	
+    	width: 50px;
+    	height: 100%;
+    	background-color: transparent;
+    }
+    div.commentBoxLeft img
+    {
+    	border: 1px solid white;
+    }
+    div.commentBoxRight a.username
+    {
+    	color:#f48401;
+    	font-weight: bold;
+    }
+    
+    div.commentBoxRight
+    {
+    	float: right;	 
+    	height: 100%;    
+    	width: 790px;	
+    	min-height: 50px;   
+    }
+    div.commentBoxRight span
+    {
+    	 	
+    }        
+    div.commentBoxRight img.speak
+    {
+    	position: absolute;
+    	top: 0;
+    	left: -6px;
+    }    
+    div.commentBoxRight textarea
+    {   
+    	width: 380px;
+    	height: 25px;   	
+    	padding: 3px 7px 3px 7px;    	
+    	border: 1px solid #cccccc;
+    	font-size:12px;
+    }    
+    div.commentBoxRight textarea.txtCommentFocus
+    {   
+    	height: 50px;  	
+    }
+    
+    
+    /*****************************************************************************/
+    

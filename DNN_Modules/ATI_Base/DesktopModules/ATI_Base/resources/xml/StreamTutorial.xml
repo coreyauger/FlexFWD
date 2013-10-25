@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<tutorials>
+	<content id="tutPic">
+		<![CDATA[
+		
+			<div style="padding: 20px; border: 1px solid #000;">
+				<h4>Profile Picture</h4>
+				<span>Clicking a <em>profile picture</em> will take you to that users profile page.</span>
+				<img src="/DesktopModules/ATI_Base/resources/images/tutPic_01.jpg" />
+				<span>Once you are on a persons profile page</span>
+				<ul style="padding: 20px; list-style: disc;">
+					<li>Friend this person.</li>
+					<li>View their stats.</li>
+					<li>View their workouts.</li>
+				</ul>
+			</div>
+		]]>
+	</content>
+	<content id="tutDetails">
+		<![CDATA[
+			<div style="padding: 20px; border: 1px solid #000;">
+				<h4>Workout Details</h4>
+				<img src="/DesktopModules/ATI_Base/resources/images/tutDetails_01.png" />
+			</div>
+		]]>
+	</content>
+	<content id="tutScore">
+		<![CDATA[
+			<div style="padding: 20px; border: 1px solid #000;">
+				<h4>Score or Time</h4>
+				<span>This can include a time/pace for cardio workouts, or may be a max weight, score, or time for other workout types.</span>
+				<br /><br />
+				<span>Don't forget to leave comments and help to motivate your friends</span>
+			</div>
+		]]>
+	</content>
+	<content id="tutControls">
+		<![CDATA[
+			<div style="padding: 20px; border: 1px solid #000;">
+				<h4>Actions</h4>
+				<ul style="padding: 20px;">
+					<li><img src="/DesktopModules/ATI_Base/resources/images/iStats_s.png"> Stats link<br />Click here to be taken to a graph containing stats about the workout.<br /><br /></li>
+					<li><img src="/DesktopModules/ATI_Base/resources/images/iTwitter.png"> Twitter<br />Use this link to tweet this post via twitter.<br /><br /></li>
+					<li><img src="/DesktopModules/ATI_Base/resources/images/iComment.png" align="absmiddle"> Comment<br />Click here to add a comment to someones post.  You can comment on anyones post.<br /><br /></li>
+				</ul>
+			</div>
+		]]>
+	</content>
+	<content id="tutComments">
+		<![CDATA[
+			<div style="padding: 20px; border: 1px solid #000;">
+				<h4>Comments</h4>
+				<img src="/DesktopModules/ATI_Base/resources/images/tutComments_01.png" />
+				<br /><br />
+				<span>This section will contain comments and motivation from the friend you make on FlexFWD.</span>
+			</div>
+		]]>
+	</content>
+</tutorials>
