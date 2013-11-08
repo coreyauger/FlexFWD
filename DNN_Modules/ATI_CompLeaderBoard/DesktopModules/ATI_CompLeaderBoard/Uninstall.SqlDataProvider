@@ -1,0 +1,43 @@
+﻿/************************************************************/
+/*****              SqlDataProvider                     *****/
+/*****                                                  *****/
+/*****                                                  *****/
+/***** Note: To manually execute this script you must   *****/
+/*****       perform a search and replace operation     *****/
+/*****       for {databaseOwner} and {objectQualifier}  *****/
+/*****                                                  *****/
+/************************************************************/
+
+
+
+/** Drop FAQs Table **/
+
+ALTER TABLE {databaseOwner}[{objectQualifier}Affine_ATI_CompLeaderBoard] DROP CONSTRAINT [FK_{objectQualifier}ATI_CompLeaderBoard_{objectQualifier}Modules]
+GO
+
+ALTER TABLE {databaseOwner}[{objectQualifier}Affine_ATI_CompLeaderBoard] DROP CONSTRAINT [PK_{objectQualifier}Affine_ATI_CompLeaderBoard]
+GO
+
+DROP INDEX {databaseOwner}[{objectQualifier}Affine_ATI_CompLeaderBoard].[IX_{objectQualifier}Affine_ATI_CompLeaderBoard]
+GO
+
+/** Drop Stored Procedures **/
+
+DROP PROCEDURE {databaseOwner}[{objectQualifier}Affine_GetATI_AllFriends]
+GO
+
+DROP PROCEDURE {databaseOwner}[{objectQualifier}Affine_GetATI_CompLeaderBoard]
+GO
+
+DROP PROCEDURE {databaseOwner}[{objectQualifier}Affine_AddATI_CompLeaderBoard]
+GO
+
+DROP PROCEDURE {databaseOwner}[{objectQualifier}Affine_UpdateATI_CompLeaderBoard]
+GO
+
+DROP PROCEDURE {databaseOwner}[{objectQualifier}Affine_DeleteATI_CompLeaderBoard]
+GO
+
+/************************************************************/
+/*****              SqlDataProvider                     *****/
+/************************************************************/
