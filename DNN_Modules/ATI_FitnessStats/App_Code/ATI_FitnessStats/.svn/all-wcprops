@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/aqufit_aqufit/!svn/ver/78/DNN_Modules/ATI_FitnessStats/App_Code/ATI_FitnessStats
+END
+ATI_FitnessStatsController.cs
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/aqufit_aqufit/!svn/ver/78/DNN_Modules/ATI_FitnessStats/App_Code/ATI_FitnessStats/ATI_FitnessStatsController.cs
+END
+ATI_FitnessStatsInfo.cs
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/aqufit_aqufit/!svn/ver/78/DNN_Modules/ATI_FitnessStats/App_Code/ATI_FitnessStats/ATI_FitnessStatsInfo.cs
+END
+DataProvider.cs
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/aqufit_aqufit/!svn/ver/78/DNN_Modules/ATI_FitnessStats/App_Code/ATI_FitnessStats/DataProvider.cs
+END
+SqlDataProvider.cs
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/aqufit_aqufit/!svn/ver/78/DNN_Modules/ATI_FitnessStats/App_Code/ATI_FitnessStats/SqlDataProvider.cs
+END
