@@ -1,0 +1,183 @@
+﻿/************************************************************/
+/*****              SqlDataProvider                     *****/
+/*****                                                  *****/
+/*****                                                  *****/
+/***** Note: To manually execute this script you must   *****/
+/*****       perform a search and replace operation     *****/
+/*****       for {databaseOwner} and {objectQualifier}  *****/
+/*****                                                  *****/
+/************************************************************/
+
+/** Create Table **/
+
+if not exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}[{objectQualifier}Affine_ATI_GroupAdmin]') and OBJECTPROPERTY(id, N'IsTable') = 1)
+	BEGIN
+		CREATE TABLE {databaseOwner}[{objectQualifier}Affine_ATI_GroupAdmin]
+		(
+			[ModuleID] [int] NOT NULL,
+			[ItemID] [int] NOT NULL IDENTITY(1, 1),
+			[Content] [ntext] NOT NULL,
+			[CreatedByUser] [int] NOT NULL,
+			[CreatedDate] [datetime] NOT NULL
+		)
+
+		ALTER TABLE {databaseOwner}[{objectQualifier}Affine_ATI_GroupAdmin] ADD CONSTRAINT [PK_{objectQualifier}Affine_ATI_GroupAdmin] PRIMARY KEY CLUSTERED  ([ItemID])
+		CREATE NONCLUSTERED INDEX [IX_{objectQualifier}Affine_ATI_GroupAdmin] ON {databaseOwner}[{objectQualifier}Affine_ATI_GroupAdmin] ([ModuleID])
+
+		ALTER TABLE {databaseOwner}[{objectQualifier}Affine_ATI_GroupAdmin] WITH NOCHECK ADD CONSTRAINT [FK_{objectQualifier}Affine_ATI_GroupAdmin_{objectQualifier}Modules] FOREIGN KEY ([ModuleID]) REFERENCES {databaseOwner}[{objectQualifier}Modules] ([ModuleID]) ON DELETE CASCADE NOT FOR REPLICATION
+	END
+GO
+
+
+if not exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}[Preview]') and OBJECTPROPERTY(id, N'IsTable') = 1)
+	BEGIN
+			
+	CREATE TABLE {databaseOwner}[Preview](
+		[Id] [bigint] IDENTITY(1,1) NOT NULL,
+		[FirstName] [varchar](64) NULL,
+		[Email] [varchar](128) NOT NULL,
+		[Comments] [text] NULL,
+		[Ip] [varchar](32) NULL,
+		[LastName] [varchar](64) NULL,
+		[IsBetaTester] [bit] NOT NULL,
+		[EnteredByUserId] [bigint] NULL,
+		[EnteredByPortalId] [bigint] NULL,
+		[EnteredByUserName] [varchar](64) NULL,
+	 CONSTRAINT [PK_Preview] PRIMARY KEY CLUSTERED 
+	(
+		[Id] ASC
+	)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+	) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+
+
+	ALTER TABLE {databaseOwner}[Preview] ADD  CONSTRAINT [DF_Preview_IsBetaTester]  DEFAULT ((0)) FOR [IsBetaTester]
+
+
+	END
+GO
+
+
+
+
+
+
+
+/** Drop Existing Stored Procedures **/
+
+if exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}[{objectQualifier}Affine_GetATI_GroupAdmins]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+	drop procedure {databaseOwner}{objectQualifier}Affine_GetATI_GroupAdmins
+GO
+
+if exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}[{objectQualifier}Affine_GetATI_GroupAdmin]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+	drop procedure {databaseOwner}{objectQualifier}Affine_GetATI_GroupAdmin
+GO
+
+if exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}[{objectQualifier}Affine_AddATI_GroupAdmin]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+	drop procedure {databaseOwner}{objectQualifier}Affine_AddATI_GroupAdmin
+GO
+
+if exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}[{objectQualifier}Affine_UpdateATI_GroupAdmin]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+	drop procedure {databaseOwner}{objectQualifier}Affine_UpdateATI_GroupAdmin
+GO
+
+if exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}[{objectQualifier}Affine_DeleteATI_GroupAdmin]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+	drop procedure {databaseOwner}{objectQualifier}Affine_DeleteATI_GroupAdmin
+GO
+
+/** Create Stored Procedures **/
+
+
+create procedure {databaseOwner}{objectQualifier}Affine_GetATI_GroupAdmins
+
+	@ModuleId int
+
+as
+
+select ModuleId,
+       ItemId,
+       Content,
+       CreatedByUser,
+       CreatedDate
+from {objectQualifier}Affine_ATI_GroupAdmin with (nolock)
+left outer join {objectQualifier}Users on {objectQualifier}Affine_ATI_GroupAdmin.CreatedByUser = {objectQualifier}Users.UserId
+where  ModuleId = @ModuleId
+GO
+
+create procedure {databaseOwner}{objectQualifier}Affine_GetATI_GroupAdmin
+
+	@ModuleId int,
+        @ItemId int
+
+as
+
+select ModuleId,
+       ItemId,
+       Content,
+       CreatedByUser,
+       CreatedDate
+from {objectQualifier}Affine_ATI_GroupAdmin with (nolock)
+left outer join {objectQualifier}Users on {objectQualifier}Affine_ATI_GroupAdmin.CreatedByUser = {objectQualifier}Users.UserId
+where  ModuleId = @ModuleId
+and ItemId = @ItemId
+GO
+
+
+create procedure {databaseOwner}{objectQualifier}Affine_AddATI_GroupAdmin
+
+	@ModuleId       int,
+	@Content        ntext,
+	@UserID         int
+
+as
+
+insert into {objectQualifier}Affine_ATI_GroupAdmin (
+	ModuleId,
+	Content,
+	CreatedByUser,
+	CreatedDate
+) 
+values (
+	@ModuleId,
+	@Content,
+	@UserID,
+	getdate()
+)
+
+GO
+
+create procedure {databaseOwner}{objectQualifier}Affine_UpdateATI_GroupAdmin
+
+	@ModuleId       int,
+        @ItemId         int,
+	@Content        ntext,
+	@UserID         int
+
+as
+
+update {objectQualifier}Affine_ATI_GroupAdmin
+set    Content       = @Content,
+       CreatedByUser = @UserID,
+       CreatedDate   = getdate()
+where  ModuleId = @ModuleId
+and    ItemId = @ItemId
+
+GO
+
+create procedure {databaseOwner}{objectQualifier}Affine_DeleteATI_GroupAdmin
+
+	@ModuleId       int,
+        @ItemId         int
+
+as
+
+delete
+from   {objectQualifier}Affine_ATI_GroupAdmin
+where  ModuleId = @ModuleId
+and    ItemId = @ItemId
+
+GO
+
+
+/************************************************************/
+/*****              SqlDataProvider                     *****/
+/************************************************************/
