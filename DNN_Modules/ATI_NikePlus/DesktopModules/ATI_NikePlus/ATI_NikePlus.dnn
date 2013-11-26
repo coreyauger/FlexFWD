@@ -1,0 +1,243 @@
+﻿<dotnetnuke type="Package" version="5.0">
+  <packages>
+    <package name="Affine.ATI_NikePlus" type="Module" version="1.0.0">
+      <friendlyName>ATI_NikePlus</friendlyName>
+      <description>A ATI_NikePlus module</description>
+      <owner>
+        <name>Corey Auger</name>
+        <organization>Affine Technology Inc.</organization>
+        <url>http://www.affinetechnology.com</url>
+        <email>coreyauger@gmail.com</email>
+      </owner>
+      <license>Licensed Affine Technology Inc.</license>
+      <releaseNotes />
+      <components>
+        <component type="Script">
+          <scripts>
+            <basePath>DesktopModules\ATI_NikePlus</basePath>
+            <script type="Install">
+              <name>01.00.00.SqlDataProvider</name>
+              <version>01.00.00</version>
+            </script>
+            <script type="UnInstall">
+              <name>Uninstall.SqlDataProvider</name>
+              <version>1.0.0</version>
+            </script>
+          </scripts>
+        </component>
+        <component type="Module">
+          <desktopModule>
+            <moduleName>Affine.ATI_NikePlus</moduleName>
+            <foldername>ATI_NikePlus</foldername>
+            <businessControllerClass>Affine.Dnn.Modules.ATI_NikePlus.ATI_NikePlusController</businessControllerClass>
+            <codeSubDirectory>ATI_NikePlus</codeSubDirectory>
+            <supportedFeatures />
+            <moduleDefinitions>
+              <moduleDefinition>
+                <friendlyName>ATI_NikePlus</friendlyName>
+                <defaultCacheTime>-1</defaultCacheTime>
+                <moduleControls>
+                  <moduleControl>
+                    <controlKey />
+                    <controlSrc>DesktopModules/ATI_NikePlus/ViewATI_NikePlus.ascx</controlSrc>
+                    <supportsPartialRendering>False</supportsPartialRendering>
+                    <controlTitle />
+                    <controlType>View</controlType>
+                    <iconFile />
+                    <helpUrl />
+                    <viewOrder>0</viewOrder>
+                  </moduleControl>
+                  <moduleControl>
+                    <controlKey>Settings</controlKey>
+                    <controlSrc>DesktopModules/ATI_NikePlus/Settings.ascx</controlSrc>
+                    <supportsPartialRendering>False</supportsPartialRendering>
+                    <controlTitle>ATI_NikePlus Settings</controlTitle>
+                    <controlType>Edit</controlType>
+                    <iconFile />
+                    <helpUrl />
+                    <viewOrder>0</viewOrder>
+                  </moduleControl>
+                </moduleControls>
+              </moduleDefinition>
+            </moduleDefinitions>
+          </desktopModule>
+          <eventMessage>
+            <processorType>DotNetNuke.Entities.Modules.EventMessageProcessor, DotNetNuke</processorType>
+            <processorCommand>UpgradeModule</processorCommand>
+            <attributes>
+              <businessControllerClass>Affine.Dnn.Modules.ATI_NikePlus.ATI_NikePlusController</businessControllerClass>
+              <desktopModuleID>[DESKTOPMODULEID]</desktopModuleID>
+              <upgradeVersionsList>01.00.00</upgradeVersionsList>
+            </attributes>
+          </eventMessage>
+        </component>
+        <component type="File">
+          <files>
+            <basePath>App_Code\ATI_NikePlus</basePath>
+            <file>
+              <name>ATI_NikePlusController.cs</name>
+            </file>
+            <file>
+              <name>ATI_NikePlusInfo.cs</name>
+            </file>
+            <file>
+              <name>DataProvider.cs</name>
+            </file>
+            <file>
+              <name>SqlDataProvider.cs</name>
+            </file>
+          </files>
+        </component>
+        <component type="File">
+          <files>
+            <basePath>DesktopModules\ATI_NikePlus</basePath>
+            <file>
+              <path>app_localresources</path>
+              <name>EditATI_Register.ascx.resx</name>
+            </file>
+            <file>
+              <path>app_localresources</path>
+              <name>Settings.ascx.resx</name>
+            </file>
+            <file>
+              <path>app_localresources</path>
+              <name>SettingsModal.ascx.resx</name>
+            </file>
+            <file>
+              <path>app_localresources</path>
+              <name>ViewATI_NikePlus.ascx.resx</name>
+            </file>
+            <file>
+              <path>app_localresources</path>
+              <name>ViewATI_Register.ascx.resx</name>
+            </file>
+            <file>
+              <path>documentation</path>
+              <name>Documentation.css</name>
+            </file>
+            <file>
+              <path>documentation</path>
+              <name>Documentation.html</name>
+            </file>
+            <file>
+              <path>documentation</path>
+              <name>logo.gif</name>
+            </file>
+            <file>
+              <path>resources\images</path>
+              <name>arrowHi.png</name>
+            </file>
+            <file>
+              <path>resources\images</path>
+              <name>arrowLow.png</name>
+            </file>
+            <file>
+              <path>resources\images</path>
+              <name>betatest.png</name>
+            </file>
+            <file>
+              <path>resources\images</path>
+              <name>iBlogger.png</name>
+            </file>
+            <file>
+              <path>resources\images</path>
+              <name>iCheck.png</name>
+            </file>
+            <file>
+              <path>resources\images</path>
+              <name>iError.png</name>
+            </file>
+            <file>
+              <path>resources\images</path>
+              <name>iFacebook.png</name>
+            </file>
+            <file>
+              <path>resources\images</path>
+              <name>iGoogle.png</name>
+            </file>
+            <file>
+              <path>resources\images</path>
+              <name>iLinkedin.png</name>
+            </file>
+            <file>
+              <path>resources\images</path>
+              <name>iLive.png</name>
+            </file>
+            <file>
+              <path>resources\images</path>
+              <name>investor.png</name>
+            </file>
+            <file>
+              <path>resources\images</path>
+              <name>iPhone.png</name>
+            </file>
+            <file>
+              <path>resources\images</path>
+              <name>iTwitter.png</name>
+            </file>
+            <file>
+              <path>resources\images</path>
+              <name>loading.gif</name>
+            </file>
+            <file>
+              <path>resources\images</path>
+              <name>loading2.gif</name>
+            </file>
+            <file>
+              <path>resources\images</path>
+              <name>login.png</name>
+            </file>
+            <file>
+              <path>resources\images</path>
+              <name>step1.png</name>
+            </file>
+            <file>
+              <path>resources\images</path>
+              <name>step2.png</name>
+            </file>
+            <file>
+              <path>resources\images</path>
+              <name>step3.png</name>
+            </file>
+            <file>
+              <path>resources\images</path>
+              <name>step4.png</name>
+            </file>
+            <file>
+              <path>resources\images</path>
+              <name>stepSelect.png</name>
+            </file>
+            <file>
+              <path>resources\images</path>
+              <name>stepTrackHi.png</name>
+            </file>
+            <file>
+              <path>resources\images</path>
+              <name>stepTrackLow.png</name>
+            </file>
+            <file>
+              <path>resources\images</path>
+              <name>thankyou.png</name>
+            </file>
+            <file>
+              <path>resources\images</path>
+              <name>welcome.png</name>
+            </file>
+            <file>
+              <name>Settings.ascx</name>
+            </file>
+            <file>
+              <name>Settings.ascx.cs</name>
+            </file>
+            <file>
+              <name>ViewATI_NikePlus.ascx</name>
+            </file>
+            <file>
+              <name>ViewATI_NikePlus.ascx.cs</name>
+            </file>
+          </files>
+        </component>
+      </components>
+    </package>
+  </packages>
+</dotnetnuke>
