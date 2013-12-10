@@ -1,0 +1,38 @@
+﻿img.space
+{
+	padding-right: 15px;
+}
+
+#divLeftNav div.friendLinkPanel
+{
+	position: relative;
+	width: 160px; 
+	background-color: #e5e5e5; 
+	margin-bottom: 5px;
+	border: 1px solid #999999;
+}
+#divLeftNav div.friendLinkPanel:hover
+{
+	background-color: #cdcdcd; 
+	cursor: pointer;
+}
+#divLeftNav div.friendLinkPanel ul
+{
+	position: absolute;
+	left: 63px;
+	top: 13px;
+}
+#divLeftNav div.friendLinkPanel li
+{
+	font-size: 12px;
+	font-weight: bold;
+	color: #999999;
+	list-style-type: disc;
+	list-style-image: url(resources/images/greyArrowRight.gif);	
+}
+#divLeftNav .searchBox
+{
+	width: 160px;
+	margin-bottom: 5px;
+	height: 20px;
+}
